@@ -26,14 +26,14 @@ public class _1978 {
 
 		StringTokenizer decTokenizer = new StringTokenizer(reader.readLine());
 		for (int i = 0; i < N; i++) {
-			if (isDemical(Integer.parseInt(decTokenizer.nextToken())))
+			if (isPrime(Integer.parseInt(decTokenizer.nextToken())))
 				result++;
 		}
 
 		System.out.print(result);
 	}
 
-	static boolean isDemical(int number) {
+	static boolean isPrime(int number) {
 		// 0과 1은 소수에 포함되지 않으므로, 항상 false를 반환한다.
 		if (number < 2) return false;
 
